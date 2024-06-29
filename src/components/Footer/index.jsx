@@ -5,7 +5,8 @@ export function Footer() {
   return (
     <>
       <Titulo>
-        Componente Footer
+        {/* <div>Finalizar Expediente</div> */}
+        Finalizar Expediente
       </Titulo>
     </>
   )
