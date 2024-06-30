@@ -1,12 +1,16 @@
-import { Titulo } from "./style"
+import { Body } from "./style"
+import { Navbar } from "../../components/Navbar"
+import { Footer } from "../../components/Footer"
 
 
 export function Acomodacao() {
   return (
     <>
-      <Titulo>
+      <Navbar/>
+      <Body>
         Acomodação - Gabriel
-      </Titulo>
+      </Body>
+      <Footer/>
     </>
   )
 }
