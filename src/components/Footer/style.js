@@ -6,7 +6,6 @@ export const Titulo = styled.h1 `
     margin: 5px;
     padding: 5px;
     text-align: center;
-    font-family: 'Inknut Antiqua', sans-serif;
     font-size: small;
 
     // Sobre a cor de fundo

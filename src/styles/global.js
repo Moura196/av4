@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+export default createGlobalStyle `
     *{
-        margin: 0;
-        padding: 0;
+        margin: 5px;
+        padding: 5px;
         box-sizing: border-box;
-        color: ${({ theme }) => theme.COLORS.WHITE};
+        color: ${({ theme }) => theme.COLORS.YELLOW_YPUA};
+        font-family: 'Inknut Antiqua', sans-serif;
     }
 
     body{
