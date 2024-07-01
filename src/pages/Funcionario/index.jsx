@@ -1,12 +1,22 @@
-import { Titulo } from "./style"
+import React, { useState } from 'react';
+import FuncionarioList from '../../components/Funcionario/FuncionarioList';
+import FuncionarioForm from '../../components/Funcionario/FuncionarioForm';
+import { FuncionarioContainer } from './style.js';
 
+const Funcionarios = () => {
+  const [selectedFuncionarioId, setSelectedFuncionarioId] = useState(null);
 
-export function Funcionario() {
+  const handleSave = () => {
+    setSelectedFuncionarioId(null);
+  };
+
   return (
-    <>
-      <Titulo>
-        Funcionario - Malfatti
-      </Titulo>
-    </>
-  )
-}
+    <FuncionarioContainer>
+      <h1>Gestão de Funcionários</h1>
+      <FuncionarioList />
+      <FuncionarioForm funcionarioId={selectedFuncionarioId} onSave={handleSave} />
+    </FuncionarioContainer>
+  );
+};
+
+export default Funcionarios;
