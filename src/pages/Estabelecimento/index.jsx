@@ -7,7 +7,7 @@ export function Estabelecimento() {
       <>
       
         <Navbar/>
-        <Footer></Footer>
+        <Footer/>
         
       </>
   )
