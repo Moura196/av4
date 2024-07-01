@@ -1,4 +1,5 @@
 import { Navbar } from "../../components/Navbar"
+import { Footer } from "../../components/Footer"
 
 
 export function Estabelecimento() {
@@ -6,6 +7,7 @@ export function Estabelecimento() {
       <>
       
         <Navbar/>
+        <Footer></Footer>
         
       </>
   )
