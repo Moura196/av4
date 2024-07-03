@@ -1,12 +1,11 @@
-import { Navbar } from "../../components/Navbar"
 import { Footer } from "../../components/Footer"
-
+import { Navmenu } from "../../components/Navmenu"
 
 export function Estabelecimento() {
   return (
       <>
       
-        <Navbar/>
+        <Navmenu/>
         <Footer/>
         
       </>

@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const Cabecalho = styled.nav `
-.navbar {
   margin: 5px;
   padding: 5px;
-}
 `
 
 export const Lista = styled.ul `
@@ -16,7 +14,6 @@ export const Lista = styled.ul `
   align-content: space-between;
   align-items: center;
   position: relative;
-  vertical-align: middle;
 `
 export const ItemLista = styled.li `
   text-decoration: none;
@@ -27,6 +24,7 @@ export const ItemLista = styled.li `
  > img {
     height: 80px;
     width: 80px;
+    align-items: center;
  } 
 `
     // export const StyledImage = styled.img `
