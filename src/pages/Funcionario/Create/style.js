@@ -4,7 +4,9 @@ export const FormContainer = styled.div`
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  transform: scale(0.8);
 `;
+
 
 export const FormTitle = styled.h2`
   color: #A03B3B;
@@ -17,6 +19,7 @@ export const Form = styled.form`
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 `;
 
 export const FormGroup = styled.div`
@@ -51,3 +54,5 @@ export const Button = styled.button`
     background-color: #801f1f;
   }
 `;
+
+
