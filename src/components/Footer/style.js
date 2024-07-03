@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
-export const Titulo = styled.h1 `
-    // Sobre o que está escrito
-    color: ${({ theme }) => theme.COLORS.YELLOW_YPUA};
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    font-size: small;
+export const Cabecalho = styled.nav `
+  margin: 5px;
+  padding: 5px;
+`
 
-    // Sobre a cor de fundo
-    background-color: ${({ theme }) => theme.COLORS.RED_YPUA};
-    /* filter: alpha(opacity=17);
-    opacity: 0.17; */
-    border-radius: 76px;
-
+export const Lista = styled.ul `
+  background-color: ${({ theme }) => theme.COLORS.RED_YPUA};
+  border-radius: 76px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+`
+export const ItemLista = styled.li `
+  text-decoration: none;
+  font-size: 1.2rem;
 `
