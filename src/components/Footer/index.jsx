@@ -1,13 +1,15 @@
-import { Titulo } from "./style"
+import { Link } from "react-router-dom"
+import { Cabecalho, Lista, ItemLista } from "./style"
 
 
 export function Footer() {
   return (
     <>
-      <Titulo>
-        {/* <div>Finalizar Expediente</div> */}
-        Finalizar Expediente
-      </Titulo>
+      <Cabecalho>
+        <Lista>
+          <ItemLista><Link to="/">Finalizar Expediente</Link></ItemLista>
+        </Lista>
+      </Cabecalho>
     </>
   )
 }
