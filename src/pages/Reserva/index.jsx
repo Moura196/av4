@@ -1,11 +1,11 @@
 import { Titulo } from "./style"
-import { Navmenu } from "../../components/Navmenu"
 import { Footer } from "../../components/Footer"
+import { Navbar } from "../../components/Navbar"
 
 export function Reserva() {
   return (
     <>
-      <Navmenu/>
+      <Navbar/>
       <Titulo>
         Reserva - A decidir
       </Titulo>

@@ -1,14 +1,14 @@
 import { Body } from "./style"
 import { Footer } from "../../components/Footer"
-import { Navmenu } from "../../components/Navmenu"
+import { Navbar } from "../../components/Navbar"
 
 export function Acomodacao() {
   return (
     <>
-      <Navmenu/>
-      <Body>
-        Acomodação - Gabriel
-      </Body>
+      <Navbar/>
+        <Body>
+          Acomodação - Gabriel
+        </Body>
       <Footer/>
     </>
   )
