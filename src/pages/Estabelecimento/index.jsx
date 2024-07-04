@@ -1,13 +1,15 @@
 import { Footer } from "../../components/Footer"
-import { Navmenu } from "../../components/Navmenu"
+import { Navbar } from "../../components/Navbar"
+import { Titulo } from "./style"
 
 export function Estabelecimento() {
   return (
-      <>
-      
-        <Navmenu/>
-        <Footer/>
-        
+      <>      
+        <Navbar/>
+          <Titulo>
+            Estabelecimento - Bruno
+          </Titulo>
+        <Footer/>        
       </>
   )
 }

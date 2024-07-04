@@ -6,9 +6,9 @@ export function Home() {
   return (
     <>
       <Navbar/>
-      <Titulo>
-        Central de Reservas - Pousada Quinta do Ypuã
-      </Titulo>
+        <Titulo>
+          Central de Reservas - Pousada Quinta do Ypuã
+        </Titulo>
       <Footer/>
     </>
   )
