@@ -6,6 +6,7 @@ import { Funcionario } from "../pages/Funcionario";
 import { Hospede } from "../pages/Hospede";
 import { Reserva } from "../pages/Reserva";
 import { CreateFuncionario } from "../pages/Funcionario/Create"; 
+import { Cadastro } from "../pages/Acomodacao/Cadastro";
 
 export function AuthRoutes(){
     return(
@@ -15,6 +16,7 @@ export function AuthRoutes(){
             <Route path="/home" element={<Home/>}/>
             <Route path="/estabelecimento" element={<Estabelecimento/>}/>
             <Route path="/acomodacao" element={<Acomodacao/>}/>
+            <Route path="/acomodacao/cadastro" element={<Cadastro/>}></Route>
             <Route path="/funcionario" element={<Funcionario/>}/>
             <Route path="/funcionario/create" element={<CreateFuncionario />} />
             <Route path="/hospede" element={<Hospede/>}/>
