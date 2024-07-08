@@ -1,5 +1,6 @@
 import { DivForm, FormInput, Button } from "./style"
-import React, {useState} from "react"
+import React, { useState } from "react"
+import axios from "axios"
 
 export function Cadastro () {
 
@@ -18,18 +19,32 @@ export function Cadastro () {
         }
         else if (name === 'valorDiaria') setValorDiaria(parseFloat(value))
         else if (name === 'limiteOcupantes') setLimiteOcupantes(parseInt(value))
-    }
-
-    const handleSubmit = (event) => {
-        event.preventDefault()
-    }
-
+    
     // console.log('Dados do formulário:')
     // console.log('Nome:', nome)
     // console.log('Valor da Diária:', valorDiaria)
     // console.log('Limite de Ocupantes:', limiteOcupantes)
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+
+        // enviar dados do formulário para pg Listagem (parâmetros URL)
+        const data = {
+            nome: nome,
+            valorDiaria: valorDiaria,
+            limiteOcupantes: limiteOcupantes,
+        }
+
+        localStorage.setItem("acomodacoes", JSON.stringify(data))
+
+        setNome("")
+        setValorDiaria(0)
+        setLimiteOcupantes(0)
+
+        alert("Acomodação cadastrada com sucesso!")
+    }
     
-    // O que está escrito aqui em baixo está funcionando export function Cadastro() {}
     return (
         <>
             <DivForm>
