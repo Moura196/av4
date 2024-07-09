@@ -1,6 +1,9 @@
 import { DivForm, FormInput, Button } from "./style"
 import React, { useState } from "react"
+import { Footer } from "../../../components/Footer"
+import { Navbar } from "../../../components/Navbar"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 export function Cadastro () {
 
@@ -47,6 +50,7 @@ export function Cadastro () {
     
     return (
         <>
+            <Navbar/>
             <DivForm>
                 <h2>Cadastro de Acomodação</h2>
                 
@@ -60,7 +64,15 @@ export function Cadastro () {
                 <FormInput type="number" id="limiteOcupantes" name="limiteOcupantes" value={limiteOcupantes} onChange={handleChange} required />
 
                 <Button type="submit" onClick={handleSubmit}>Cadastrar Acomocação</Button>
-            </DivForm>            
+            </DivForm>
+            <main>
+          <ul>
+            <li>
+              <Link to="/acomodacao">Voltar</Link>
+            </li>
+          </ul>
+        </main>
+            <Footer/>       
         </>
     )
 }

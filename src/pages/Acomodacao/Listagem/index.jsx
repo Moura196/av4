@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 import { Listar } from "./style"
+import { Footer } from "../../../components/Footer"
+import { Navbar } from "../../../components/Navbar"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 export function Listagem () {
     const [acomodacoes, setAcomodacoes] = useState([])
@@ -15,6 +18,7 @@ export function Listagem () {
 
     return (
         <>
+            <Navbar/>
             <Listar>
                 <h2>Listagem de Acomodações</h2>
 
@@ -35,6 +39,14 @@ export function Listagem () {
                     </ul>
                 )}
             </Listar>
+            <main>
+                <ul>
+                    <li>
+                        <Link to="/acomodacao">Voltar</Link>
+                    </li>
+                </ul>
+            </main>
+            <Footer/>
         </>
     )
 }
