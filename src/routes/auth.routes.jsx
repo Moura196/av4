@@ -8,6 +8,8 @@ import { Reserva } from "../pages/Reserva";
 import { CreateFuncionario } from "../pages/Funcionario/Create"; 
 import { Cadastro } from "../pages/Acomodacao/Cadastro";
 import { Listagem } from "../pages/Acomodacao/Listagem";
+import { Edicao } from "../pages/Acomodacao/Edicao"
+import { Remocao } from "../pages/Acomodacao/Remocao"
 import { CreateEstabelecimento } from "../pages/Estabelecimento/Create";
 
 export function AuthRoutes(){
@@ -21,6 +23,8 @@ export function AuthRoutes(){
             <Route path="/acomodacao" element={<Acomodacao/>}/>
             <Route path="/acomodacao/cadastro" element={<Cadastro/>}/>
             <Route path="/acomodacao/listagem" element={<Listagem/>}/>
+            <Route path="/acomodacao/edicao" element={<Edicao/>}/>
+            <Route path="/acomodacao/remocao" element={<Remocao/>}/>
             <Route path="/funcionario" element={<Funcionario/>}/>
             <Route path="/funcionario/create" element={<CreateFuncionario />} />
             <Route path="/hospede" element={<Hospede/>}/>
